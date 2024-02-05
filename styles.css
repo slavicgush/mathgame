@@ -1,0 +1,101 @@
+body{
+  background-color: white;
+  font-family: 'Times New Roman';
+  height: 100vh;
+  margin-top: 0;
+  
+}
+canvas{
+  margin: 0;
+  width: 300px;
+  height: 150px;
+}
+
+#main{
+  text-align: center;
+}
+.records{
+  height: 60px;
+}
+.records #quiz{
+  font-weight: bold;
+  font-size: 20px;
+}
+.records #points{
+  font-size: 20px;
+  font-weight: bold;
+}
+#timeup {
+  font-size: 20px;
+  height: 30px;
+  display: flex;
+  align-items: center; 
+  justify-content: right;
+  font-weight: bold;
+}
+input{
+    justify-content: center;
+    margin-right: 5px;
+    margin-bottom: 20px;
+    margin-top: 0;
+    height: 20px ;
+    font-size: larger;
+}
+#header{
+  height: 35%;
+  background-color:rgb(2, 78, 2);
+}
+h1{
+  line-height: 2em;
+  font-size: 4em;
+  color: white;
+  
+}
+#lower{
+  align-items: center;
+}
+#newgame{
+  align-items: center;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+button {
+  font-size: 1em;
+  width: 20%;
+  border: 2px solid white;
+  border-radius: 2em;
+  background-color:rgb(2, 78, 2);
+  color: white;
+  line-height: 3em;
+} 
+
+@media only screen and (max-width: 858px) {
+  canvas {
+    width: 100%; 
+    height: auto; 
+  }
+
+  #header {
+    height: 20%;
+  }
+
+  h1 {
+    font-size: 2em; 
+  }
+
+  #lower {
+    margin-bottom: 10%;
+  }
+
+  button {
+    width: 80%;
+    line-height: 2em; 
+  }
+
+  input {
+    width: 80%; 
+    margin-bottom: 10px;
+  }
+}
+

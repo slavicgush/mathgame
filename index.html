@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Math Game</title>
+</head>
+<body>
+  <div id="main">
+    <div id="header">
+    <h1>MATH GAME</h1>
+    </div>
+    <div id="gameOverContainer" style="display: none;">
+      <div id="gameOverText">GAME OVER</div>
+      <div id="allCounters"></div>
+    </div>
+    <div class="records">
+      <div id="timeup"></div>
+      <div id="quiz">Quiz: <span id="qcount"></span>/20</div>
+      <div id="points">Points: <span id="pcount">0</span></div>
+      
+    </div>
+   
+     <canvas> </canvas> 
+     <div id="lower">
+       <label for="answer">Ans</label>
+      <input type="text" id="ans" onkeypress="checkEnterKey(event)"> 
+      <br>
+      <button type="button" onclick="validateAns()" >Submit</button>
+      <div id="result" style="font-size: larger;"></div>
+      </div>
+      <button type="button" onclick="location.reload()" id="newgame" style="display: none;">New Game</button>
+  </div>
+  <script src="calc.js"></script>
+</body>
+</html>
